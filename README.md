@@ -5,5 +5,5 @@
 Activity.dispatchTouchEvent()->PhoneWindow.superDispatchEvent()->Decor.superDispatchEvent()->Frame.dispatchTouchEvent()->viewGroup.dispatchTouchEvent()->view.dispatchTouchEvent
 ```
 ```
-ViewGroup.dispatchTouchEvent()->viewGroup.interceptTouchEvent()->View.dispatchTouchEvent()->view.onTouch()->view.onTouchEvent()->view.didspatchTouchEvent()->ViewGroup.onTouchEvent()->ViewGroup.dispatchTouchEvent()->Activity.dispatchTouchEvent()->Activity.onTouchEvent()
+ViewGroup.dispatchTouchEvent()->viewGroup.interceptTouchEvent()->View.dispatchTouchEvent()->view.onTouch()->view.onTouchEvent()->view.performClick()->view.onClick()->view.didspatchTouchEvent()->ViewGroup.onTouchEvent()->ViewGroup.dispatchTouchEvent()->Activity.dispatchTouchEvent()->Activity.onTouchEvent()
 ```
