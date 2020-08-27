@@ -1,6 +1,6 @@
 # TouchEventDispatchDemo
 点击事件分发
-基本时间分发为：
+### 基本事件分发为：
 ```
 Activity.dispatchTouchEvent()->PhoneWindow.superDispatchEvent()->Decor.superDispatchEvent()->Frame.dispatchTouchEvent()->viewGroup.dispatchTouchEvent()->view.dispatchTouchEvent
 ```
