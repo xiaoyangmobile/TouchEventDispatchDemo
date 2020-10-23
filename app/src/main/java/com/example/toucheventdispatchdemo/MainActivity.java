@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        System.out.println("Activity.dispatchTouchEvent: begin");
         //分发事件
         boolean dis = super.dispatchTouchEvent(ev);
         System.out.println("Activity.dispatchTouchEvent()=" + dis);
@@ -54,5 +55,11 @@ public class MainActivity extends AppCompatActivity {
         boolean dis = super.onTouchEvent(event);
         System.out.println("Activity.onTouchEvent()=" + dis);
         return dis;
+    }
+
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+        System.out.println("onUserInteraction:OK");
     }
 }
